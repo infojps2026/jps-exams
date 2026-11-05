@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEMS JPS Exams – All Exam Links in One Place</title>
+<meta name="description" content="GEMS JPS Exams: every exam link for GEMS Jumeirah Primary School students in one place. Search by subject or year group and open your exam fast.">
+<meta name="keywords" content="GEMS JPS exams, GEMS JPS exam links, GEMS Jumeirah Primary School exams, JPS exam, JPS online exam, JPS school exams Dubai">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="GEMS JPS Exams – All Exam Links">
+<meta property="og:description" content="Search and open every GEMS JPS exam link in one place.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"GEMS JPS Exams","description":"All GEMS JPS exam links in one place."}
+</script>
+<style>
+:root{
+  --paper:#fbfaf6; --ink:#14213d; --blue:#2b59c3; --hi:#ffd23f; --line:#cfd8ee; --margin:#e5484d; --soft:#eef2fb;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;
+  --body:"Newsreader",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0f1626; --ink:#eef1fa; --blue:#8fb0ff; --line:#27345a; --soft:#17213a}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.15rem/1.55 var(--body)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+
+.hero{padding:1.5rem 0 1.5rem}
+.sheet{
+  background:
+    linear-gradient(90deg,transparent 2.6rem,var(--margin) 2.6rem,var(--margin) calc(2.6rem + 2px),transparent calc(2.6rem + 2px)),
+    repeating-linear-gradient(transparent,transparent 2.2rem,var(--line) 2.2rem,var(--line) calc(2.2rem + 1px));
+  border:2px solid var(--ink);border-radius:6px;
+  padding:1.6rem 1.2rem 1.6rem 4rem;
+  box-shadow:6px 6px 0 var(--ink);
+}
+.sheet small{font-family:var(--display);font-weight:700}
+.sheet h1{font:800 clamp(2.4rem,9vw,4.8rem)/1 var(--display);margin:.3rem 0 .6rem;letter-spacing:-.03em}
+.sheet h1 mark{background:var(--hi);color:#14213d;padding:0 .15em;border-radius:3px}
+.sheet p{margin:0;max-width:32rem}
+
+.tools{position:sticky;top:0;z-index:5;background:var(--paper);padding:1rem 0 .6rem;border-bottom:2px solid var(--ink)}
+.tools label{font:700 1rem var(--display);display:block;margin-bottom:.3rem}
+#q{width:100%;font:1.2rem var(--body);padding:.8rem 1rem;border:2px solid var(--ink);border-radius:6px;background:var(--paper);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.7rem}
+.chips button{font:700 .95rem var(--display);padding:.4rem .9rem;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--hi);color:#14213d}
+.count{font:700 .95rem var(--display);margin:.9rem 0 .6rem}
+
+ul.links{list-style:none;margin:0 0 3rem;padding:0;display:grid;gap:.7rem}
+.card{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;background:var(--soft);border:2px solid var(--ink);border-left:8px solid var(--blue);border-radius:6px;text-decoration:none;color:var(--ink)}
+a.card:hover{background:var(--hi);color:#14213d;border-left-color:var(--ink)}
+.card b{display:block;font:700 1.2rem var(--display)}
+.card span{font-size:1rem;opacity:.8}
+.go{font:700 1rem var(--display);white-space:nowrap}
+.soon{opacity:.55;border-style:dashed}
+.empty{padding:1.2rem;border:2px dashed var(--line);border-radius:6px}
+
+footer{border-top:2px solid var(--ink);padding:1.2rem 0 2.5rem;font-size:1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="sheet">
+      <small>GEMS Jumeirah Primary School · Dubai</small>
+      <h1>GEMS JPS <mark>Exams</mark></h1>
+      <p>Every exam link in one place. Search for your subject or choose your year group, then tap to open.</p>
+    </div>
+  </header>
+
+  <div class="tools">
+    <label for="q">Search exams</label>
+    <input id="q" type="search" placeholder="Try “maths” or “Year 5”" autocomplete="off">
+    <div class="chips" id="years" role="group" aria-label="Filter by year group"></div>
+    <div class="chips" id="subjects" role="group" aria-label="Filter by subject"></div>
+  </div>
+
+  <main>
+    <p class="count" id="count" aria-live="polite"></p>
+    <ul class="links" id="list"></ul>
+    <p class="empty" id="empty" hidden>No exams match that search. Clear the filters or try another word.</p>
+  </main>
+
+  <footer>
+    <p>GEMS JPS Exams collects exam links for students. Follow your teacher’s instructions on when and how to take each exam.</p>
+  </footer>
+</div>
+
+<script>
+/* ===== EDIT HERE: add one line per exam =====
+   year:    "Year 1" … "Year 6"
+   subject: "English", "Maths", "Science", "Arabic", …
+   title:   what students see
+   url:     the exam link (leave "" and it shows "Link coming soon")
+*/
+const exams = [
+  {year:"Year 1", subject:"English", title:"English Exam",  url:""},
+  {year:"Year 1", subject:"Maths",   title:"Maths Exam",    url:""},
+  {year:"Year 2", subject:"English", title:"English Exam",  url:""},
+  {year:"Year 2", subject:"Maths",   title:"Maths Exam",    url:""},
+  {year:"Year 3", subject:"English", title:"English Exam",  url:""},
+  {year:"Year 3", subject:"Science", title:"Science Exam",  url:""},
+  {year:"Year 4", subject:"Maths",   title:"Maths Exam",    url:""},
+  {year:"Year 4", subject:"Arabic",  title:"Arabic Exam",   url:""},
+  {year:"Year 5", subject:"Science", title:"Science Exam",  url:""},
+  {year:"Year 5", subject:"Maths",   title:"Maths Exam",    url:""},
+  {year:"Year 6", subject:"English", title:"English Exam",  url:""},
+  {year:"Year 6", subject:"Maths",   title:"Maths Exam",    url:""}
+];
+/* ============================================ */
+
+const state = {year:"All", subject:"All", q:""};
+const $ = id => document.getElementById(id);
+
+function chips(el, values, key){
+  ["All", ...values].forEach(v => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = v === "All" ? "All " + key + "s" : v; b.dataset.v = v;
+    b.addEventListener("click", () => { state[key] = v; render(); });
+    el.append(b);
+  });
+}
+const uniq = k => [...new Set(exams.map(e => e[k]))].sort();
+chips($("years"), uniq("year"), "year");
+chips($("subjects"), uniq("subject"), "subject");
+
+function render(){
+  const q = state.q.trim().toLowerCase();
+  const shown = exams.filter(e =>
+    (state.year === "All" || e.year === state.year) &&
+    (state.subject === "All" || e.subject === state.subject) &&
+    (!q || (e.year + " " + e.subject + " " + e.title).toLowerCase().includes(q)));
+  const list = $("list"); list.innerHTML = "";
+  shown.forEach(e => {
+    const li = document.createElement("li");
+    const live = !!e.url;
+    const card = document.createElement(live ? "a" : "div");
+    card.className = "card" + (live ? "" : " soon");
+    if (live){ card.href = e.url; card.target = "_blank"; card.rel = "noopener noreferrer"; }
+    const left = document.createElement("div");
+    const t = document.createElement("b"); t.textContent = e.title;
+    const s = document.createElement("span"); s.textContent = e.year + " · " + e.subject;
+    left.append(t, s);
+    const go = document.createElement("span"); go.className = "go";
+    go.textContent = live ? "Open exam" : "Link coming soon";
+    card.append(left, go); li.append(card); list.append(li);
+  });
+  $("count").textContent = shown.length + (shown.length === 1 ? " exam" : " exams");
+  $("empty").hidden = shown.length > 0;
+  document.querySelectorAll("#years button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.year));
+  document.querySelectorAll("#subjects button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.subject));
+}
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+render();
+</script>
+</body>
+</html>

@@ -3,16 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- If this replaces a page verified in Google Search Console, paste your google-site-verification meta tag here. -->
+<meta name="google-site-verification" content="_xB7WLV9h0eoGI0PJxJKCz3Yw-XGlCI2M808zMr8q0M" />
 <title>GEMS JPS Exams – All Exam Links</title>
 <meta name="google-site-verification" content="_xB7WLV9h0eoGI0PJxJKCz3Yw-XGlCI2M808zMr8q0M" />
 <meta name="description" content="Every GEMS Jumeirah Primary School exam and learning link in one place.">
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
 <script>
-/* Apply saved theme before paint to avoid a flash */
-try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;
-else if(matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.dataset.theme="light"}catch(e){}
+/* Follow the device light/dark setting before paint to avoid a flash */
+try{if(matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.dataset.theme="light"}catch(e){}
 </script>
 <style>
 :root{
@@ -41,15 +40,6 @@ a,button{font:inherit;color:inherit;-webkit-tap-highlight-color:transparent;touc
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:14px}
 .wrap{max-width:680px;margin:0 auto}
 
-.bar{display:flex;justify-content:flex-end;gap:.6rem;margin-bottom:1rem}
-.icon-btn{
-  display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;cursor:pointer;
-  background:var(--card);border:1px solid var(--border);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  transition:transform .2s,background .2s;
-}
-.icon-btn:active{transform:scale(.94)}
-.icon-btn svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.sun{display:none}[data-theme="light"] .sun{display:block}[data-theme="light"] .moon{display:none}
 
 header{text-align:center;padding:.5rem 0 1.6rem}
 .avatar{
@@ -58,15 +48,10 @@ header{text-align:center;padding:.5rem 0 1.6rem}
   background:linear-gradient(135deg,#38bdf8,#a78bfa);
   box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--border),0 12px 30px rgba(56,189,248,.3);
 }
+.avatar{position:relative;overflow:hidden}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:.45rem;background:#fff}
 h1{font-size:clamp(1.6rem,4.2vw,2.3rem);line-height:1.2;letter-spacing:-.01em}
 .bio{color:var(--muted);margin:.4rem auto 1rem;max-width:32rem;font-size:clamp(1rem,2.2vw,1.1rem)}
-.socials{display:flex;justify-content:center;gap:.6rem}
-.socials a{
-  display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;text-decoration:none;
-  background:var(--card);border:1px solid var(--border);transition:transform .2s,background .2s;
-}
-.socials a:active{transform:scale(.94)}
-.socials svg{width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 nav ul{list-style:none;padding:0;display:grid;gap:.75rem}
 .group{grid-column:1/-1;margin:.9rem .25rem .1rem;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -89,8 +74,6 @@ nav ul{list-style:none;padding:0;display:grid;gap:.75rem}
 .link:focus-visible{border-color:var(--c)}
 .link:focus-visible .arrow{transform:translateX(2px);opacity:1;stroke:var(--c)}
 @media (hover:hover) and (pointer:fine){
-  .icon-btn:hover{background:var(--card-h);transform:translateY(-2px)}
-  .socials a:hover{background:var(--card-h);transform:translateY(-3px)}
   .link:hover{background:var(--card-h);border-color:var(--c);transform:scale(1.02);box-shadow:0 12px 36px color-mix(in srgb,var(--c) 30%,transparent)}
   .link:hover::before{opacity:.16}
   .link:hover .arrow{transform:translateX(2px);opacity:1;stroke:var(--c)}
@@ -118,12 +101,6 @@ nav ul{list-style:none;padding:0;display:grid;gap:.75rem}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:2rem 0 1rem}
 footer a{color:inherit}
 
-.toast{
-  position:fixed;left:50%;bottom:max(1.5rem,env(safe-area-inset-bottom));transform:translate(-50%,2rem);opacity:0;pointer-events:none;
-  background:var(--text);color:var(--bg);padding:.65rem 1.1rem;border-radius:999px;font-weight:600;font-size:.9rem;
-  box-shadow:var(--shadow);transition:transform .3s,opacity .3s;max-width:calc(100% - 2rem);text-align:center;
-}
-.toast.show{transform:translate(-50%,0);opacity:1}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}
@@ -133,26 +110,11 @@ footer a{color:inherit}
 </head>
 <body>
 <div class="wrap">
-  <div class="bar">
-    <button class="icon-btn" id="share" type="button" aria-label="Share this page">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
-    </button>
-    <button class="icon-btn" id="theme" type="button" aria-label="Switch between dark and light theme">
-      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
-      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-    </button>
-  </div>
 
   <header>
-    <div class="avatar" aria-hidden="true">JPS</div>
+    <div class="avatar"><span aria-hidden="true">JPS</span><img src="logo.png" alt="GEMS Jumeirah Primary School logo" onerror="this.remove()"></div>
     <h1>GEMS JPS Exams</h1>
     <p class="bio">Every exam and learning link for Jumeirah Primary School students, in one place.</p>
-    <div class="socials">
-      <a href="#" aria-label="School website"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></a>
-      <a href="#" aria-label="Email the school"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
-      <a href="#" aria-label="School on Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
-      <a href="#" aria-label="School on YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
-    </div>
   </header>
 
   <main>
@@ -163,13 +125,12 @@ footer a{color:inherit}
         <li><a class="link" style="--i:1;--c:#a78bfa" href="https://www.testwise.com/code" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🔑</span><span class="txt"><b>Testwise</b><small>Enter your exam code</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:2;--c:#2dd4bf" href="https://timss.sonet.com.au/engine/index.php" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🌍</span><span class="txt"><b>TIMSS Exam</b><small>Maths and science study</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
 
-        <li class="group">Subjects</li>
+        <li class="group">Learning platforms</li>
         <li><a class="link" style="--i:3;--c:#fbbf24" href="https://play.ttrockstars.com/public/auth" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🎸</span><span class="txt"><b>TT Rockstars</b><small>Times tables practice</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:4;--c:#34d399" href="https://app.readingwise.com/" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">📚</span><span class="txt"><b>ReadingWise</b><small>English reading</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:5;--c:#fb7185" href="https://arabic-uae.com/" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">ع</span><span class="txt"><b>Arabic UAE</b><small>Arabic language</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:6;--c:#4ade80" href="https://islamic-uae.com/" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🌙</span><span class="txt"><b>Islamic UAE</b><small>Islamic studies</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
 
-        <li class="group">Learning platforms</li>
         <li><a class="link" style="--i:7;--c:#818cf8" href="https://student.upstrivesystem.com/login" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🚀</span><span class="txt"><b>Upstrive</b><small>Student login</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:8;--c:#f472b6" href="https://app.seesaw.me/#/student/login" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🎨</span><span class="txt"><b>Seesaw</b><small>Student login</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         <li><a class="link" style="--i:9;--c:#22d3ee" href="https://app.century.tech/login/" target="_blank" rel="noopener noreferrer"><span class="ico" aria-hidden="true">🧠</span><span class="txt"><b>Century Tech</b><small>Personalised learning</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
@@ -183,38 +144,13 @@ footer a{color:inherit}
   </footer>
 </div>
 
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 (function(){
-  var root=document.documentElement, toast=document.getElementById("toast"), timer;
+  var root=document.documentElement;
   document.getElementById("yr").textContent=new Date().getFullYear();
 
-  function say(msg){
-    toast.textContent=msg;toast.classList.add("show");
-    clearTimeout(timer);timer=setTimeout(function(){toast.classList.remove("show")},2200);
-  }
 
-  document.getElementById("theme").addEventListener("click",function(){
-    var next=root.dataset.theme==="light"?"dark":"light";
-    root.dataset.theme=next;
-    try{localStorage.setItem("theme",next)}catch(e){}
-    document.querySelector('meta[name="theme-color"]').content=next==="light"?"#f1f5f9":"#0f172a";
-  });
-
-  document.getElementById("share").addEventListener("click",function(){
-    var data={title:document.title,url:location.href};
-    if(navigator.share){navigator.share(data).catch(function(){});return}
-    function legacy(){
-      var t=document.createElement("textarea");t.value=data.url;t.style.position="fixed";t.style.opacity="0";
-      document.body.appendChild(t);t.select();
-      try{document.execCommand("copy");say("Link copied")}catch(e){say("Copy failed")}
-      t.remove();
-    }
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(data.url).then(function(){say("Link copied")},legacy);
-    }else legacy();
-  });
 })();
 </script>
 </body>
